@@ -19,7 +19,7 @@ spec:
             - mountPath: /openedx/credentials/credentials/settings/tutor/production.py
               name: settings
               subPath: production.py
-        imagePullSecrets:
+      imagePullSecrets:
         - name: {{ IMAGE_PULL_SECRET }}
       volumes:
         - name: settings
